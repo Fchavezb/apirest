@@ -8,8 +8,10 @@ app.use(express.json());
 // Base de datos simulada
 let datos = {
   id: 1,
-  nombre: 'Franklin',
-  profesion: 'Desarrollador'
+  nombre: 'Juan Perez',
+  profesion: 'Desarrollador',
+  universidad:'UTN'
+
 };
 
 // GET - Obtener los datos
