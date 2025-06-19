@@ -40,6 +40,11 @@ app.delete('/api/datos', (req, res) => {
   res.json({ mensaje: 'Datos eliminados correctamente' });
 });
 
+app.get('/', (req, res) => {
+  res.send('Bienvenido a la API. Visita /api/datos');
+});
+
+
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
